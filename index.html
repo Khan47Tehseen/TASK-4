@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Responsive Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="logo">MySite</h1>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    </div>
+  </header>
+
+  <main class="container main-grid">
+    <aside class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This sidebar has a fixed width on desktop and will stack on mobile.</p>
+    </aside>
+
+    <section class="content">
+      <h2>Hero</h2>
+      <p class="lead">This is a demo page to show responsive CSS using media queries. Resize the browser or use Chrome DevTools device toolbar.</p>
+
+      <img src="https://via.placeholder.com/1200x500" alt="Large demo" class="hero-img">
+
+      <div class="cards">
+        <div class="card">Card 1: some content</div>
+        <div class="card">Card 2: some content</div>
+        <div class="card">Card 3: some content</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 MySite</div>
+  </footer>
+
+  <script>
+    // Small script to toggle nav on narrow screens
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
