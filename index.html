@@ -25,24 +25,55 @@
     </div>
   </header>
 
-  <main class="container main-grid">
-    <aside class="sidebar">
-      <h2>Sidebar</h2>
-      <p>This sidebar has a fixed width on desktop and will stack on mobile.</p>
-    </aside>
-
-    <section class="content">
-      <h2>Hero</h2>
-      <p class="lead">This is a demo page to show responsive CSS using media queries. Resize the browser or use Chrome DevTools device toolbar.</p>
-
-      <img src="https://via.placeholder.com/1200x500" alt="Large demo" class="hero-img">
-
-      <div class="cards">
-        <div class="card">Card 1: some content</div>
-        <div class="card">Card 2: some content</div>
-        <div class="card">Card 3: some content</div>
-      </div>
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to Our Site</h1>
+      <p class="lead">Experience responsive design at its finest. Our modern layout adapts perfectly to any screen size.</p>
+      <a href="#features" class="cta-button">Explore Features</a>
     </section>
+
+    <div class="main-grid">
+      <section class="content">
+        <div class="feature-image">
+          <img src="https://via.placeholder.com/800x400" alt="Featured content" class="hero-img">
+        </div>
+        
+        <div class="cards">
+          <div class="card">
+            <div class="card-icon">📱</div>
+            <h3>Responsive Design</h3>
+            <p>Perfectly adapts to any screen size from mobile to desktop.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">🎨</div>
+            <h3>Modern UI</h3>
+            <p>Clean and intuitive interface with smooth interactions.</p>
+          </div>
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Fast Loading</h3>
+            <p>Optimized performance for the best user experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="sidebar-content">
+          <h2>Quick Links</h2>
+          <ul class="sidebar-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          
+          <div class="sidebar-cta">
+            <h3>Need Help?</h3>
+            <p>Get in touch with our support team for assistance.</p>
+            <button class="secondary-button">Contact Support</button>
+          </div>
+        </div>
+      </aside>
+    </div>
   </main>
 
   <footer class="site-footer">
